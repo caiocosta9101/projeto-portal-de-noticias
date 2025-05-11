@@ -40,3 +40,21 @@ a:hover {
 h1, h2, h2 {
     font: inherit;
 }
+
+.container {
+    max-width: 1280px;
+    /*alinha o lado direito e o esquerdo iguais*/
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+
+/* utility-first */
+.grid {
+    display: grid
+}
+
+/* deixa em forma de coluna */
+.grid-flow-col {
+    grid-auto-flow: column;
+
+}

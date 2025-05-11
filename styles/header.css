@@ -1,0 +1,30 @@
+/*padding-block cria espaçamento vertical em cima e em baixo*/
+#primary {
+    padding-block: 20px;
+
+    div {
+        display: flex;
+        /*alinha os itens na direção do outro*/
+        align-items: center;
+        /*espaçamento entre os elementos que estão grudados*/
+        gap: 8px;
+    }
+
+    /* nesting css */
+    div:nth-child(2) {
+        margin-inline: auto;
+    }
+
+    div:nth-child(3) {
+        /*joga o icone pro final*/
+        justify-self: end;
+    }
+}
+
+#secondary {
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+    /*alinha tudo de uma vez na mesma medida*/
+    justify-content: space-between;
+}
